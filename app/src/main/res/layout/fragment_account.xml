@@ -10,6 +10,7 @@
 
 
 
+
     <!-- Blue Background Section -->
     <LinearLayout
         android:id="@+id/blueLayout"
@@ -19,6 +20,18 @@
         android:orientation="vertical"
         android:paddingTop="20dp"
         android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/editButton"
+            android:textColor="#fff"
+            android:background="@color/blue"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Profili Düzenle"
+            android:layout_below="@id/contactLayout" />
 
         <!-- Profile Picture -->
         <ImageView
@@ -69,6 +82,7 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:weightSum="3">
+
 
             <!-- Photos -->
             <LinearLayout
@@ -139,6 +153,7 @@
             android:paddingLeft="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
 
             <ImageView
                 android:layout_width="36dp"
@@ -230,17 +245,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/editButton"
-        android:textColor="#fff"
-        android:background="@color/blue"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Profili Düzenle"
-        android:layout_below="@id/contactLayout" />
+
 
     </RelativeLayout>
 
