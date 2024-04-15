@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/profilImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/insan"
+            android:layout_centerHorizontal="true"/>
+
+
+
+        <!-- Email EditText -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/profilImage"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Ad"
+            android:inputType="textPersonName" />
+
+
+        <!-- Email EditText -->
+        <EditText
+            android:id="@+id/editTextSurName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/editTextName"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Soyad"
+            android:inputType="textPersonName" />
+
+
+
+        <!-- Email EditText -->
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/editTextSurName"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Telefon Numarası (05XX XXX XX XX)"
+            android:inputType="text" />
+        <!-- Email EditText -->
+        <EditText
+            android:id="@+id/editTextStudentno"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/editTextPhone"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Okul Numarası"
+            android:inputType="text" />
+
+
+        <Spinner
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:id="@+id/spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPhone"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+
+        <Spinner
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner3"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+        <Spinner
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner1"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner2"
+            android:layout_marginStart="24dp"
+            android:text="Telefon numarası gizli olsun." />
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox1"
+            android:layout_marginStart="24dp"
+            android:text="Email adresi gizli olsun." />
+        <EditText
+            android:id="@+id/editTextInstagram"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/checkbox2"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Instagram hesap linki"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editTextTwitter"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/editTextInstagram"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Twitter hesap linki"
+            android:inputType="text" />
+        <Button
+            android:id="@+id/editButton"
+            android:textColor="#fff"
+            android:background="@color/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/editTextTwitter"
+            android:text="Kaydet" />
+
+    </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
